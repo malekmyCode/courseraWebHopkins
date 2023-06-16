@@ -1,0 +1,52 @@
+/*
+
+	 mobile display < 786px < tablet display < 992px < descktop display
+*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.titre{
+	text-align: center;
+	margin: 3%;
+}
+
+main{
+	margin: 4rem;
+	border: 1px solid blue;
+	clear: both;
+	color: blue;
+}
+main::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+section{
+	border: 1px solid black;
+	padding: 1rem ;
+	float: left;
+	
+
+}
+
+footer{
+	clear: left;
+}
+
+@media(min-width : 786px){
+	.col_lg2{
+		width: 45%;
+		margin: 0% 2.5%;
+	}
+}
+
+@media(min-width : 992px){
+	.col_lg2{
+		width: 30%;
+		margin: 0% 1.6%;
+	}
+}

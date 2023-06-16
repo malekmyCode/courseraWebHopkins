@@ -1,0 +1,98 @@
+/*
+
+	 mobile display < 786px < tablet display < 992px < descktop display
+*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.titre{
+	text-align: center;
+	margin: 3%;
+	font-size: 1.75rem;
+}
+
+main{
+	margin: 5%;
+	border: 1px solid blue;
+	color: ;
+}
+
+main::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+section{
+	border: 1px solid black;
+	padding: 1rem ;
+	float: left;
+	margin: 20px 0% 20px 0%;
+	position: relative;
+	padding-top: 2.5rem ;
+	background: gray;
+}
+
+.d2{
+	position: relative;
+	border: 1px solid blueviolet ;
+}
+
+.stitre{
+	font-size: 1.25rem;
+	display: inline-block;
+	padding: 5px;
+	background: gray;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 1px solid black ;
+	width: 100px ;
+	text-align: center;
+}
+.t1{
+	background: skyblue ;
+}
+.t2{
+	background: lightcoral;
+}
+.t3{
+	background: lightpink;
+}
+
+.pargraphe{
+	clear: both;
+}
+
+
+footer{
+	clear: left;
+}
+
+@media(min-width : 786px){
+	.col_lg2{
+		width: 45%;
+		margin: 20px 2.5%;
+		color: greenyellow;
+	}
+
+	.col_lg1{
+		width: 95%;
+		margin: 20px 2.5%;
+	}
+	.stitre{
+		color: blue;
+	}
+}
+
+@media(min-width : 992px){
+	.col_lg2{
+		color: blue;
+		width: 30%;
+		margin: 20px 1.6%;
+	}
+}
